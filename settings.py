@@ -431,14 +431,14 @@ class Settings:
         # mqtt broker address
         row += 1
         nb.Label(tnb_comm, text="Broker Address:").grid(padx=PADX, row=row, sticky=tk.E)
-        nb.Entry(tnb_comm, textvariable=self._broker_tk).grid(
+        nb.EntryMenu(tnb_comm, textvariable=self._broker_tk).grid(
             padx=PADX, pady=PADY, row=row, column=1, sticky=tk.EW
         )
 
         # mqtt broker port
         row += 1
         nb.Label(tnb_comm, text="Port:").grid(padx=PADX, row=row, sticky=tk.E)
-        nb.Entry(tnb_comm, textvariable=self._port_tk).grid(
+        nb.EntryMenu(tnb_comm, textvariable=self._port_tk).grid(
             padx=PADX, pady=PADY, row=row, column=1, sticky=tk.EW
         )
 
@@ -452,14 +452,14 @@ class Settings:
         # mqtt broker keepalive
         row += 1
         nb.Label(tnb_comm, text="Keepalive:").grid(padx=PADX, row=row, sticky=tk.E)
-        nb.Entry(tnb_comm, textvariable=self._keepalive_tk).grid(
+        nb.EntryMenu(tnb_comm, textvariable=self._keepalive_tk).grid(
             padx=PADX, pady=PADY, row=row, column=1, sticky=tk.EW
         )
 
         # mqtt client id
         row += 1
         nb.Label(tnb_comm, text="Client ID:").grid(padx=PADX, row=row, sticky=tk.E)
-        nb.Entry(tnb_comm, textvariable=self._client_id_tk).grid(
+        nb.EntryMenu(tnb_comm, textvariable=self._client_id_tk).grid(
             padx=PADX, pady=PADY, row=row, column=1, sticky=tk.EW
         )
 
@@ -476,14 +476,14 @@ class Settings:
         # mqtt username
         row += 1
         nb.Label(tnb_comm, text="Username:").grid(padx=PADX, row=row, sticky=tk.E)
-        nb.Entry(tnb_comm, textvariable=self._username_tk).grid(
+        nb.EntryMenu(tnb_comm, textvariable=self._username_tk).grid(
             padx=PADX, pady=PADY, row=row, column=1, sticky=tk.EW
         )
 
         # mqtt password
         row += 1
         nb.Label(tnb_comm, text="Password:").grid(padx=PADX, row=row, sticky=tk.E)
-        nb.Entry(tnb_comm, textvariable=self._password_tk).grid(
+        nb.EntryMenu(tnb_comm, textvariable=self._password_tk).grid(
             padx=PADX, pady=PADY, row=row, column=1, sticky=tk.EW
         )
 
@@ -518,7 +518,7 @@ class Settings:
         nb.Label(tnb_comm, text="Server Certificate (CA)").grid(
             padx=PADX, row=row, sticky=tk.E
         )
-        nb.Entry(tnb_comm, textvariable=self._ca_certs_tk).grid(
+        nb.EntryMenu(tnb_comm, textvariable=self._ca_certs_tk).grid(
             padx=PADX, pady=PADY, row=row, column=1, sticky=tk.EW
         )
 
@@ -527,14 +527,14 @@ class Settings:
         nb.Label(tnb_comm, text="Client Certificate").grid(
             padx=PADX, row=row, sticky=tk.E
         )
-        nb.Entry(tnb_comm, textvariable=self._certfile_tk).grid(
+        nb.EntryMenu(tnb_comm, textvariable=self._certfile_tk).grid(
             padx=PADX, pady=PADY, row=row, column=1, sticky=tk.EW
         )
 
         # client key
         row += 1
         nb.Label(tnb_comm, text="Client Key").grid(padx=PADX, row=row, sticky=tk.E)
-        nb.Entry(tnb_comm, textvariable=self._keyfile_tk).grid(
+        nb.EntryMenu(tnb_comm, textvariable=self._keyfile_tk).grid(
             padx=PADX, pady=PADY, row=row, column=1, sticky=tk.EW
         )
 
@@ -546,7 +546,7 @@ class Settings:
         # mqtt root topic
         row += 1
         nb.Label(tnb_data, text="Root Topic").grid(padx=PADX, row=row, sticky=tk.W)
-        nb.Entry(tnb_data, textvariable=self._root_topic_tk).grid(
+        nb.EntryMenu(tnb_data, textvariable=self._root_topic_tk).grid(
             padx=PADX, pady=PADY, row=row, column=1, sticky=tk.EW
         )
 
